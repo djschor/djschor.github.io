@@ -28,13 +28,13 @@
 		<meta name="x-build-time" content="{{ site.time | date_to_rfc822 }}">
 		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 		<link rel="alternate" type="application/rss+xml" title="Daniel Schorin's Blog" href="https://danielschorin.com/blog">
-		<link rel="icon" href="{{ '/favicon.png' | relative_url }}" sizes="32x32">
+		<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
 		<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 		<script src="https://use.fontawesome.com/473ea12f98.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://use.fontawesome.com/794c5387fa.js"></script>
 		<script defer src="{{ '/main.js' | relative_url }}"></script>
-		
+
 		{% if page.url == '/' %}
 			<script defer src="{{ 'javascript/AnchorScroller.js' | relative_url }}"></script>
 			<script defer src="{{ '/index.js' | relative_url }}"></script>
