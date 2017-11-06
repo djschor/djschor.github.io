@@ -220,18 +220,20 @@ Generated with https://icomoon.io/app/
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fa-pencil:before {
-	content: '\e905';
+.icon-brand:before {
+  content: "\e900";
+  color: #f38936;
+}
+.icon-brand2:before {
+  content: "\e901";
 }
 
-.fa-github:before {
-	content: '\eab0';
+.icon-brand3:before {
+  content: "\e902";
+  color: #0077b5;
 }
 
-.fa-twitter:before {
-	content: '\ea96';
-}
-
-.fa-caret-down:before {
-	content: '\e900';
+.icon-brand4:before {
+  content: "\e903";
+  color: #1da1f2;
 }
