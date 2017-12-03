@@ -54,7 +54,7 @@
 			<div class="hero-head">
 				<div class="container">
 					<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-						<div class="container">
+						<div class="navbar-start">
 							<div class="navbar-left">
 								{% if page.url == '/' %}
 									<a id="astronaut-btn" class="navbar-item" href="https://danielschorin.com/astronaut" title="Click me!">👨🏽‍🚀</a>
@@ -63,21 +63,22 @@
 								{% endif %}
 							</div>
 						</div>
-						<div class = "navbar-brand"> 
+						<div class = "navbar-end">
+							<div class="navbar-right navbar-menu is-active">
+								<a class="navbar-item is-tab" href="{% link index.html %}">Home</a>
+								<a class="navbar-item is-tab" href="{% link index.html %}#about">About</a>
+								<a class="navbar-item is-tab" href="{% link index.html %}#projects">Projects</a>
+								<span class="navbar-item">
+									<a class="button" href="{% link contact.md %}">Contact</a>
+								</span>
+							</div>
+							<div class = "navbar-brand"> 
 								<button class="button navbar-burger">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-
-						<div class="navbar-right navbar-menu is-active">
-							<a class="navbar-item is-tab" href="{% link index.html %}">Home</a>
-							<a class="navbar-item is-tab" href="{% link index.html %}#projects">Projects</a>
-							<a class="navbar-item is-tab" href="{% link index.html %}#about">About</a>
-							<span class="navbar-item">
-								<a class="button" href="{% link contact.md %}">Contact</a>
-							</span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+							</div>
 						</div>
 					</nav>
 				</div>
