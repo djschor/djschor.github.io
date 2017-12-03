@@ -53,26 +53,26 @@
 		<section class="hero">
 			<div class="hero-head">
 				<div class="container">
-					<nav class="nav has-shadow">
+					<nav class="navbar has-shadow">
 						<div class="container">
-							<div class="nav-left">
+							<div class="navbar-left">
 								{% if page.url == '/' %}
-									<a id="astronaut-btn" class="nav-item" href="https://danielschorin.com/astronaut" title="Click me!">👨🏽‍🚀</a>
+									<a id="astronaut-btn" class="navbar-item" href="https://danielschorin.com/astronaut" title="Click me!">👨🏽‍🚀</a>
 								{% else %}
-									<span class="nav-item">Daniel Schorin</span>
+									<span class="navbar-item">Daniel Schorin</span>
 								{% endif %}
 							</div>
-							<span class="nav-toggle">
+							<button class="button navbar-burger">
 								<span></span>
 								<span></span>
 								<span></span>
-							</span>
-							<div class="nav-right nav-menu is-active">
-								<a class="nav-item is-tab" href="{% link index.html %}">Home</a>
-								<a class="nav-item is-tab" href="{% link index.html %}#projects">Projects</a>
-								<a class="nav-item is-tab" href="danielschorin.com/about">About</a>
+							</button>
+							<div class="navbar-right navbar-menu is-active">
+								<a class="navbar-item is-tab" href="{% link index.html %}">Home</a>
+								<a class="navbar-item is-tab" href="{% link index.html %}#projects">Projects</a>
+								<a class="navbar-item is-tab" href="danielschorin.com/about">About</a>
 						
-								<span class="nav-item">
+								<span class="navbar-item">
 									<a class="button" href="{% link contact.md %}">Contact</a>
 								</span>
 							</div>
