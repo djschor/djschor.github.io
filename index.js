@@ -1,4 +1,4 @@
-/* eslint-env browser */
+/* eslint-env browser
 (() => {
 	const isDev = ['localhost', '127.0.0.1'].includes(location.hostname);
 
@@ -86,3 +86,5 @@
 		document.addEventListener('scroll', hideScrollHint, {passive: true});
 	}
 })();
+
+ */
