@@ -3,6 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<script defer src="fontawesome-all.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#3273DC">
 		<meta name="author" content="Daniel Schorin">
@@ -27,22 +28,14 @@
 		<meta name="twitter:creator" content="@danielschorin">
 		<meta name="x-build-time" content="{{ site.time | date_to_rfc822 }}">
 		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/scss/font-awesome.scss">
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+		<!--<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/scss/font-awesome.scss">
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+		-->
 		<link rel="alternate" type="application/rss+xml" title="Daniel Schorin's Blog" href="https://danielschorin.com/blog">
 		<link rel="preload" href="{{ '/font-awesome.woff' | relative_url }}" as="font" crossorigin>
 		<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
 		<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 		<script defer src="{{ '/main.js' | relative_url }}"></script>
-
-		{% if page.url == '/' %}
-			<script defer src="{{ 'javascript/AnchorScroller.js' | relative_url }}"></script>
-			<script defer src="{{ '/index.js' | relative_url }}"></script>
 		{% endif %}
 		<!-- Google Analytics -->
 		<script>
