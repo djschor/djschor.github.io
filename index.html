@@ -82,7 +82,9 @@ layout: default
 				<div class="column is-two-thirds is-centered has-nice-link" itemscope itemtype="http://schema.org/Person">
 
 					<img id="profile-pic" src="litty.PNG" width="160" height="160" itemprop="image">
-					<p3 class="paragraph"> Welcome! I'm Daniel Schorin, a Information Analytics and Business student at the University of Michigan. My interests lie on intersection of business strategy, analytics, design, and product development.</p>		
+					<p3 class="paragraph"> Welcome! I'm Daniel Schorin, an Information Analytics and Business student at the University of Michigan. My interests lie on intersection of business strategy, analytics, design, and product development.
+
+					I operate through passion, and I'm passionate about a lot of things. From my extracurricular projects with Pi Sigma Epsilon and MHacks, to my hobbies including yoga, basketball, climbing, backpacking, and jazz music, I take solace in expanding my horizons. Read on to learn more about my projects. </p>		
 				</div>
 		</div>
 	</div>
@@ -113,7 +115,7 @@ layout: default
 </section>
 <section class="section hero is-fullheight is-default is-bold">
 	<div id="apps" class="container">
-		<h2 class="title is-2">Apps</h2>
+		<h2 class="title is-2">Projects</h2>
 		<div class="columns is-multiline">
 			{% for app in site.apps reversed %}
 			<div class="column is-mobile is-half-tablet is-one-third-desktop">
@@ -125,7 +127,7 @@ layout: default
 							{% endcomment %}
 
 							{% for file in site.static_files %}
-								{% assign path = '/assets/' | append: app.slug | append: '/thumbnail' %}
+								{% assign p ath = '/assets/' | append: app.slug | append: '/thumbnail' %}
 								{% if file.path contains path %}
 									<img src="{{ file.path }}">
 								{% endif %}
